@@ -576,6 +576,10 @@ footer h5{
     .ogi{
         margin-left: 0px;
     }
+    .navbar-collapse{
+        background-color: #161515 !important;
+        padding: 20px;
+    }
     .amm{
             position:fixed !important;
             right:5px;
@@ -583,7 +587,7 @@ footer h5{
         }
         .amm a svg{
             width:60px;
-        }
+        } 
     .hid img{
         height: 300px;
         object-fit: cover;

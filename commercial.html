@@ -81,6 +81,7 @@
                     <h1 class="pt-3">Jemray Solar<span> Products</span></h1>
                     <h1  class="">Commercial Solar Solutions</h1>
                 </div>
+                
             </div>
         </div>
         <div class="section">
@@ -173,93 +174,93 @@
             }
         }
     </script>
-       <script>
-  const products = [
-    {
-      title: "Clipper",
-      subtitle: "Model:SR-Barber01",
-      image: "./images/clipper.jpeg",
-      description: "Ideal for barbers and grooming professionals in off-grid settings.",
-      properties: [
-        "🔋 Built-in 3.7V/2000mAh Li-ion battery",
-        "☀️ 3W/6V Polycrystalline solar panel with 3M cable",
-        "✅ USB input: 5V/1A, charging current: 1A",
-        "11V/20W, 5m cable solar panel",
-        "Compact and easy to operate"
-      ]
-    },
-    {
-      title: "DC Fridge",
-      subtitle: "Model: BD-100 (Fridge + Freezer)",
-      image: "./images/fri.jpeg",
-      description: "Efficient and versatile cooling solution for food preservation and small business use",
-      properties: [
-        "🔋 Capacity: 108L (switchable between fridge/freezer)",
-        "☀️ Input voltage: 12V",
-        "🛡️ Power: 40W",
-        "✅ Refrigerant: R600",
-        "Super low power consumption",
-        "Long-term insulation and efficient cycle refrigeration"
-      ]
-    },
-    {
-       title: "Solar drive DC freezee",
-      subtitle: "Model: BD-100 (Fridge or Freezer)",
-      image: "./images/fri1.jpeg",
-      description: "Dual compartment for separating cooling and freezing needs.",
-      properties: [
-        "🔋 Capacity: 90L (fridge and freezer combo)",
-        "☀️ Input voltage: 12V",
-        "✅ Power: 20–30W",
-        "Refrigerant: R600A",
-        "Super low power consumption",
-        "Efficient cycle refrigeration" 
-      ]
-    },
-  ];
+    <script>
+        const products = [
+            {
+            title: "Clipper",
+            subtitle: "Model:SR-Barber01",
+            image: "./images/clipper.jpeg",
+            description: "Ideal for barbers and grooming professionals in off-grid settings.",
+            properties: [
+                "🔋 Built-in 3.7V/2000mAh Li-ion battery",
+                "☀️ 3W/6V Polycrystalline solar panel with 3M cable",
+                "✅ USB input: 5V/1A, charging current: 1A",
+                "11V/20W, 5m cable solar panel",
+                "Compact and easy to operate"
+            ]
+            },
+            {
+            title: "DC Fridge",
+            subtitle: "Model: BD-100 (Fridge + Freezer)",
+            image: "./images/fri.jpeg",
+            description: "Efficient and versatile cooling solution for food preservation and small business use",
+            properties: [
+                "🔋 Capacity: 108L (switchable between fridge/freezer)",
+                "☀️ Input voltage: 12V",
+                "🛡️ Power: 40W",
+                "✅ Refrigerant: R600",
+                "Super low power consumption",
+                "Long-term insulation and efficient cycle refrigeration"
+            ]
+            },
+            {
+            title: "Solar drive DC freezee",
+            subtitle: "Model: BD-100 (Fridge or Freezer)",
+            image: "./images/fri1.jpeg",
+            description: "Dual compartment for separating cooling and freezing needs.",
+            properties: [
+                "🔋 Capacity: 90L (fridge and freezer combo)",
+                "☀️ Input voltage: 12V",
+                "✅ Power: 20–30W",
+                "Refrigerant: R600A",
+                "Super low power consumption",
+                "Efficient cycle refrigeration" 
+            ]
+            },
+        ];
 
-  const container = document.getElementById("product-list");
+        const container = document.getElementById("product-list");
 
-  products.forEach((product, index) => {
-    container.innerHTML += `
-      <div class="col-12 col-md-6 col-lg-4 mt-5" data-aos="fade-up" data-aos-delay="500">
-        <div class="opt" onclick="viewProduct(${index})">
-          <div class="bab">
-            <div class="d-flex justify-content-end">
-              <i class="bi bi-heart"></i>
+        products.forEach((product, index) => {
+            container.innerHTML += `
+            <div class="col-12 col-md-6 col-lg-4 mt-5" data-aos="fade-up" data-aos-delay="500">
+                <div class="opt" onclick="viewProduct(${index})">
+                <div class="bab">
+                    <div class="d-flex justify-content-end">
+                    <i class="bi bi-heart"></i>
+                    </div>
+                    <div class="inu">
+                    <img id="product-image-${index}" src="${product.image}" width="100%" style="height:290px" alt="${product.title}">
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between pt-3">
+                    <p>Jemray</p>
+                    <h6><i class="bi bi-star-fill noz"></i> 4.5</h6>
+                </div>
+                <h5>${product.title}</h5>
+                <p>${product.subtitle}</p>
+                <a href="#" class="noz">Learn More</a>
+                </div>
             </div>
-            <div class="inu">
-              <img id="product-image-${index}" src="${product.image}" width="100%" style="height:290px" alt="${product.title}">
-            </div>
-          </div>
-          <div class="d-flex align-items-center justify-content-between pt-3">
-            <p>Jemray</p>
-            <h6><i class="bi bi-star-fill noz"></i> 4.5</h6>
-          </div>
-          <h5>${product.title}</h5>
-          <p>${product.subtitle}</p>
-          <a href="#" class="noz">Learn More</a>
-        </div>
-      </div>
-    `;
-  });
+            `;
+        });
 
-  function viewProduct(index) {
-    localStorage.setItem('selectedProduct', JSON.stringify(products[index]));
-    window.location.href = 'product-details.html';
-  }
-  setInterval(() => {
-    products.forEach((product, index) => {
-      const imgEl = document.getElementById(`product-image-${index}`);
-      if (!imgEl) return;
+        function viewProduct(index) {
+            localStorage.setItem('selectedProduct', JSON.stringify(products[index]));
+            window.location.href = 'product-details.html';
+        }
+        setInterval(() => {
+            products.forEach((product, index) => {
+            const imgEl = document.getElementById(`product-image-${index}`);
+            if (!imgEl) return;
 
-      const imgs = [product.image, product.sim_image1, product.sim_image2].filter(Boolean);
-      const currentSrc = imgEl.src;
-      const currentIndex = imgs.findIndex(src => currentSrc.includes(src));
-      const nextIndex = (currentIndex + 1) % imgs.length;
-      imgEl.src = imgs[nextIndex];
-    });
-  }, 3000);
-</script>
+            const imgs = [product.image, product.sim_image1, product.sim_image2].filter(Boolean);
+            const currentSrc = imgEl.src;
+            const currentIndex = imgs.findIndex(src => currentSrc.includes(src));
+            const nextIndex = (currentIndex + 1) % imgs.length;
+            imgEl.src = imgs[nextIndex];
+            });
+        }, 3000);
+    </script>
 </body>
 </html>
