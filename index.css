@@ -228,6 +228,11 @@
 .ree {
     width: 340px;
 }
+.visa{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
 .com{
     margin-top: -10px;
 }
