@@ -574,9 +574,24 @@ footer h5{
         outline: none;
         border: none;
     }
+    .cap ul li{
+        padding-top: 16px;
+    }
+    .pra a{
+        text-decoration: none;
+        background-color: #F0C206;
+        color: white;
+        padding: 10px 20px;
+    }
 @media (max-width:764px) {
     .use,.lies{
         flex-direction: column !important;
+    }
+    .dropdown-item{
+        width: 300px;
+    }
+    .pad{
+        margin-left: 60px;
     }
     .ogi{
         margin-left: 0px;
