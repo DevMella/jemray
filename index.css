@@ -583,9 +583,21 @@ footer h5{
         color: white;
         padding: 10px 20px;
     }
+    .job-details {
+      margin: 60px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+    }
+    .job-details h1 {
+      color: #f0c30d;
+    }
 @media (max-width:764px) {
     .use,.lies{
         flex-direction: column !important;
+    }
+    .cap ul li{
+        font-size: 20px !important;
     }
     .dropdown-item{
         width: 300px;
@@ -611,6 +623,9 @@ footer h5{
     .hid img{
         height: 300px;
         object-fit: cover;
+    }
+    .til{
+        margin-top: 30px;
     }
     .bac{
         padding-top: 15px;

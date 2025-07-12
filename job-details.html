@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jemray Solar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jemray Solar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloud    flare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/93483deb2b.js" crossorigin="anonymous"></script>
@@ -11,31 +12,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="index.css">
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f8f9fa;
-    }
-    .job-details {
-      margin: 60px auto;
-      padding: 30px;
-      background: #fff;
-      border-radius: 10px;
-    }
-    .job-details h1 {
-      color: #f0c30d;
-    }
-  </style>
 </head>
 <body>
-  <div class="overflow-x-hidden">
-    <div class="about">
+    <div class="overflow-x-hidden">
+        <div class="career">
             <div class="amm position-fixed">
                 <a href="https://wa.me/2348150610136?text=Hi, my name is..." >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#F0C206" d="M92.1 254.6c0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6L152 365.2l4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8c0-35.2-15.2-68.3-40.1-93.2c-25-25-58-38.7-93.2-38.7c-72.7 0-131.8 59.1-131.9 131.8zM274.8 330c-12.6 1.9-22.4 .9-47.5-9.9c-36.8-15.9-61.8-51.5-66.9-58.7c-.4-.6-.7-.9-.8-1.1c-2-2.6-16.2-21.5-16.2-41c0-18.4 9-27.9 13.2-32.3c.3-.3 .5-.5 .7-.8c3.6-4 7.9-5 10.6-5c2.6 0 5.3 0 7.6 .1c.3 0 .5 0 .8 0c2.3 0 5.2 0 8.1 6.8c1.2 2.9 3 7.3 4.9 11.8c3.3 8 6.7 16.3 7.3 17.6c1 2 1.7 4.3 .3 6.9c-3.4 6.8-6.9 10.4-9.3 13c-3.1 3.2-4.5 4.7-2.3 8.6c15.3 26.3 30.6 35.4 53.9 47.1c4 2 6.3 1.7 8.6-1c2.3-2.6 9.9-11.6 12.5-15.5c2.6-4 5.3-3.3 8.9-2s23.1 10.9 27.1 12.9c.8 .4 1.5 .7 2.1 1c2.8 1.4 4.7 2.3 5.5 3.6c.9 1.9 .9 9.9-2.4 19.1c-3.3 9.3-19.1 17.7-26.7 18.8zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM148.1 393.9L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5c29.9 30 47.9 69.8 47.9 112.2c0 87.4-72.7 158.5-160.1 158.5c-26.6 0-52.7-6.7-75.8-19.3z"/></svg>           
                 </a>           
             </div>
-           <nav class="navbar navbar-expand-lg" data-aos="fade-down" data-aos-delay="500">
+            <nav class="navbar navbar-expand-lg" data-aos="fade-down" data-aos-delay="500">
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="./images/logo white 1.png" width="100%" alt="">
@@ -92,15 +78,33 @@
             </nav>
             <div class="container bes pt-5">
                 <div class="d-flex align-items-center justify-content-center flex-column">
-                    <h1  class="">Job Description</h1>
-                    <h1  class="">Details</h1>
+                    <h1  class="pt-4 text-center">Job Description <br> Details</h1>
                 </div>
             </div>
         </div>
-    <div class="container job-details" id="job-container">
-        <h1>Loading...</h1>
-    </div>
-    <footer class="text-white z-1">
+        <div class="container job-details" id="job-container">
+            <h1>Loading...</h1>
+        </div>
+        <!-- Apply Now Modal -->
+        <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+            <div class="modal-header">
+                    <h5 class="modal-title" id="applyModalLabel">📨 Apply Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Interested in this role?</p>
+                <p>Please kindly send us your resume and a short cover letter to:</p>
+                <p><strong>📩 <a id="emailLink" href="" style="color: #f0c206; text-decoration: underline;"></a></strong></p>
+                <p>Our HR team will review your application and get in touch if you're a perfect fit for us.</p>
+                <p><strong>📌 Use the subject line:</strong><br>Application – <span id="jobTitleSpan" style="font-weight: bold;"></span></p>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="section"></div>
+        <footer class="text-white z-1">
             <div class="section sections">
                 <div class="container">
                     <div class="row pb-2">
@@ -152,21 +156,42 @@
                             </div>
                         </div>
                     </div>
-                     <div class="visa mt-5"></div>
+                    <div class="visa mt-5"></div>
                     <div>
                         <h6 class="text-center pt-5">© Copyright 2020 - 2025 | All Rights Reserved | Designed and Developed by <a style="color: white; font-weight: bold;" href="https://aladmosolutionshub.com">Aladmo Solutions Hub</a></h6>
                     </div>
                 </div>
             </div>
         </footer>
-  </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+    <script>
+        function toggleText(element) {
+            const extraText = element.previousElementSibling;
+            if (extraText.style.display === "inline") {
+            extraText.style.display = "none";
+            element.textContent = "Read more";
+            } else {
+            extraText.style.display = "inline";
+            element.textContent = "Read less";
+            }
+        }
+    </script>
+    <script>
     const jobs = {
       "field-marketing": {
         title: "Field Marketing & Sales Associate",
@@ -243,13 +268,19 @@
                 <ul>${job.requirements.map(item => `<li>${item}</li>`).join('')}</ul>
                 
             </div>
-            <div class="w-100 d-flex align-items-center justify-content-center pra"><a href="career.html"  class=" mt-3">Apply Now</a></div>
+            <div class="w-100 d-flex align-items-center justify-content-center pra"><a href="career.html"  class=" mt-3" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</a></div>
         </div>
       `;
     } else {
       container.innerHTML = `<h2>Job not found.</h2><a href="career.html" class="btn btn-secondary mt-3">← Back</a>`;
     }
-  </script>
+    if (job) {
+  const subject = encodeURIComponent(`Application – ${job.title}`);
+  document.getElementById("emailLink").href = `mailto:careers@jemraysolar.com?subject=${subject}`;
+  document.getElementById("emailLink").textContent = "careers@jemraysolar.com";
+  document.getElementById("jobTitleSpan").textContent = job.title;
+}
+  </script> 
 
 </body>
 </html>
