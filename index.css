@@ -618,6 +618,18 @@ footer h5{
     .job-details h1 {
       color: #f0c30d;
     }
+    .bottom-left-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top-left-radius: 100px;
+    z-index: 0;
+    pointer-events: none;
+}
+
 @media (max-width:764px) {
     .use,.lies{
         flex-direction: column !important;
