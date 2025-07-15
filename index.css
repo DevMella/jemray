@@ -79,6 +79,32 @@
     height: 80vh;
     color: white !important;
 }
+.dar {
+    color: #c9c9c9;
+    font-size: 15px;
+}
+.ect input{
+    width: 100%;
+    border: none ;
+    outline: none;
+    border-bottom: 1px solid #8d8d8d;
+}
+.ect textarea{
+    width: 100%;
+    border: none ;
+    outline: none;
+    border-bottom: 1px solid #8d8d8d;
+    resize: none;
+}
+.jii{
+    width: 100%;
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),url(./images/shi.png);
+      height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    color: white !important;
+}
 .career{
     width: 100%;
     background:linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),url(./images/career.png);
@@ -113,7 +139,7 @@
     font-weight: 100 !important;
     font-size: 19px;
 }
-.bes button,.lol button,.dat button,.nan button,.eyin button{
+.bes button,.lol button,.dat button,.nan button,.eyin button,.ect button{
     width: 170px;
     height: 54px;
     background-color: #F0C206;
